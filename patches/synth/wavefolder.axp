@@ -1,0 +1,129 @@
+<patch-1.0>
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="238" y="70">
+      <params>
+         <frac32.u.map name="value" value="24.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="630" y="98">
+      <params>
+         <frac32.u.map name="value" value="27.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="70" y="210">
+      <params>
+         <frac32.s.map name="pitch" value="-5.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_10" x="182" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_1" x="252" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_9" x="322" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_2" x="392" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_11" x="462" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_3" x="532" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_12" x="602" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_4" x="672" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_8" x="742" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="826" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_1" x="826" y="420">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="vca_8" outlet="o"/>
+         <dest obj="scope_1" inlet="in"/>
+         <dest obj="out_1" inlet="left"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="dial_1" outlet="out"/>
+         <dest obj="vca_8" inlet="v"/>
+      </net>
+      <net>
+         <source obj="sine_1" outlet="wave"/>
+         <dest obj="vca_10" inlet="a"/>
+      </net>
+      <net>
+         <source obj="cos_1" outlet="out"/>
+         <dest obj="vca_9" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_9" outlet="o"/>
+         <dest obj="cos_2" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="vca_10" outlet="o"/>
+         <dest obj="cos_1" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="dial_3" outlet="out"/>
+         <dest obj="vca_10" inlet="v"/>
+         <dest obj="vca_9" inlet="v"/>
+         <dest obj="vca_11" inlet="v"/>
+         <dest obj="vca_12" inlet="v"/>
+      </net>
+      <net>
+         <source obj="cos_3" outlet="out"/>
+         <dest obj="vca_12" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_12" outlet="o"/>
+         <dest obj="cos_4" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="vca_11" outlet="o"/>
+         <dest obj="cos_3" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="cos_4" outlet="out"/>
+         <dest obj="vca_8" inlet="a"/>
+      </net>
+      <net>
+         <source obj="cos_2" outlet="out"/>
+         <dest obj="vca_11" inlet="a"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>215</x>
+      <y>278</y>
+      <width>1059</width>
+      <height>763</height>
+   </windowPos>
+</patch-1.0>
