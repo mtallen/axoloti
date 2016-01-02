@@ -1,0 +1,579 @@
+<patch-1.0>
+   <obj type="env/ahd" sha="c4000e3e6417d9d57283d66476b83f22f975ff09" uuid="2139369d6de2ba5ddf76e602d1d25df653ca9eed" name="ahd_9" x="196" y="14">
+      <params>
+         <frac32.s.map name="a" value="-64.0"/>
+         <frac32.s.map name="d" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="env/ahd" sha="c4000e3e6417d9d57283d66476b83f22f975ff09" uuid="2139369d6de2ba5ddf76e602d1d25df653ca9eed" name="ahd_8" x="392" y="56">
+      <params>
+         <frac32.s.map name="a" value="-64.0"/>
+         <frac32.s.map name="d" value="21.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb" sha="b8deb97637e54be31fcb62e849e4fa406e72256e" name="keyb1" x="56" y="84">
+      <params/>
+      <attribs/>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="patcher_1" x="266" y="168">
+      <params>
+         <frac32.s.map name="width" MidiCC="1" value="0.0"/>
+         <frac32.u.map name="OSC_1" value="19.0"/>
+         <frac32.u.map name="OSC_5" value="21.5"/>
+         <frac32.u.map name="OSC_2" value="35.0"/>
+         <frac32.u.map name="OSC_6" value="45.5"/>
+         <frac32.u.map name="OSC_3" value="29.0"/>
+         <frac32.u.map name="OSC_7" value="45.0"/>
+         <frac32.u.map name="OSC_4" value="29.0"/>
+         <frac32.u.map name="OSC_8" value="41.5"/>
+      </params>
+      <attribs/>
+      <subpatch>
+         <obj type="ctrl/dial b" sha="b26f881dfa1451f0269e068eb6b3d824b43b41d3" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="width" x="154" y="70">
+            <params>
+               <frac32.s.map name="value" onParent="true" value="0.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet f" sha="8e69e1ab7ccd8afaefdc23146c50149809b64955" uuid="5c585d2dcd9c05631e345ac09626a22a639d7c13" name="note_in" x="14" y="84">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_11" x="154" y="168">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_12" x="252" y="168">
+            <params>
+               <frac32.u.map name="amp" value="0.6999998092651367"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_10" x="350" y="168">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="50b9299d5a370749aa9d6cfdb949bf3191a1f68" uuid="3280bb759e9fc189e134300e48dda7e903c9a110" name="-_3" x="420" y="168">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="490" y="168">
+            <params>
+               <frac32.s.map name="pitch" value="-40.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_1" x="588" y="168">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_1" x="896" y="168">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_1" x="994" y="168">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_5" x="1064" y="168">
+            <params>
+               <frac32.s.map name="pitch" value="8.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_5" x="1162" y="168">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_2" x="154" y="280">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_3" x="252" y="280">
+            <params>
+               <frac32.u.map name="amp" value="0.5999999046325684"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_3" x="350" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="50b9299d5a370749aa9d6cfdb949bf3191a1f68" uuid="3280bb759e9fc189e134300e48dda7e903c9a110" name="-_1" x="420" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_2" x="490" y="280">
+            <params>
+               <frac32.s.map name="pitch" value="-28.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_2" x="588" y="280">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_4" x="728" y="280">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_5" x="826" y="280">
+            <params>
+               <frac32.u.map name="amp" value="0.5999999046325684"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_5" x="924" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_4" x="994" y="280">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_6" x="1064" y="280">
+            <params>
+               <frac32.s.map name="pitch" value="20.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_6" x="1162" y="280">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_10" x="322" y="392">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="50b9299d5a370749aa9d6cfdb949bf3191a1f68" uuid="3280bb759e9fc189e134300e48dda7e903c9a110" name="-_2" x="420" y="392">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_3" x="490" y="392">
+            <params>
+               <frac32.s.map name="pitch" value="-16.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_3" x="588" y="392">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_6" x="728" y="392">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_7" x="826" y="392">
+            <params>
+               <frac32.u.map name="amp" value="0.6999998092651367"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_6" x="924" y="392">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_7" x="994" y="392">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_7" x="1064" y="392">
+            <params>
+               <frac32.s.map name="pitch" value="32.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_7" x="1162" y="392">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_4" x="490" y="504">
+            <params>
+               <frac32.s.map name="pitch" value="-4.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_4" x="588" y="504">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_8" x="728" y="504">
+            <params>
+               <frac32.u.map name="amp" value="0.009999999776482582"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="60143a29e35f452025e9edaa2dec6e660ecb9c6e" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_9" x="826" y="504">
+            <params>
+               <frac32.u.map name="amp" value="0.75"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_8" x="924" y="504">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_9" x="994" y="504">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_8" x="1064" y="504">
+            <params>
+               <frac32.s.map name="pitch" value="44.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="OSC_8" x="1162" y="504">
+            <params>
+               <frac32.u.map name="amp" onParent="true" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="mix/mix 8" sha="2a15d0acae3d6367a4a722b623fdaf9149f5535d" uuid="f12e13a7920b67f4e286369e0e2c573e5af08f9c" name="mix_2" x="1330" y="574">
+            <params>
+               <frac32.u.map name="gain1" value="16.0"/>
+               <frac32.u.map name="gain2" value="16.0"/>
+               <frac32.u.map name="gain3" value="16.0"/>
+               <frac32.u.map name="gain4" value="16.0"/>
+               <frac32.u.map name="gain5" value="16.0"/>
+               <frac32.u.map name="gain6" value="16.0"/>
+               <frac32.u.map name="gain7" value="16.0"/>
+               <frac32.u.map name="gain8" value="16.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="outlet_1" x="1470" y="672">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="note_in" outlet="inlet"/>
+               <dest obj="+_1" inlet="in1"/>
+               <dest obj="+_4" inlet="in1"/>
+               <dest obj="+_7" inlet="in1"/>
+               <dest obj="+_9" inlet="in1"/>
+               <dest obj="sine_4" inlet="pitch"/>
+               <dest obj="-_1" inlet="in1"/>
+               <dest obj="-_2" inlet="in1"/>
+               <dest obj="-_3" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="width" outlet="out"/>
+               <dest obj="*c_1" inlet="in"/>
+               <dest obj="*c_2" inlet="in"/>
+               <dest obj="*c_3" inlet="in"/>
+               <dest obj="*c_5" inlet="in"/>
+               <dest obj="*c_4" inlet="in"/>
+               <dest obj="*c_6" inlet="in"/>
+               <dest obj="*c_8" inlet="in"/>
+               <dest obj="*c_7" inlet="in"/>
+               <dest obj="*c_9" inlet="in"/>
+               <dest obj="*c_10" inlet="in"/>
+               <dest obj="*c_11" inlet="in"/>
+               <dest obj="*c_12" inlet="in"/>
+            </net>
+            <net>
+               <source obj="*c_1" outlet="out"/>
+               <dest obj="+_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="+_1" outlet="out"/>
+               <dest obj="sine_5" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="*c_2" outlet="out"/>
+               <dest obj="+_3" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="+_3" outlet="out"/>
+               <dest obj="-_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_3" outlet="out"/>
+               <dest obj="+_3" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_4" outlet="out"/>
+               <dest obj="+_5" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="+_5" outlet="out"/>
+               <dest obj="+_4" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_5" outlet="out"/>
+               <dest obj="+_5" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="+_4" outlet="out"/>
+               <dest obj="sine_6" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="*c_6" outlet="out"/>
+               <dest obj="+_6" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="+_6" outlet="out"/>
+               <dest obj="+_7" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_7" outlet="out"/>
+               <dest obj="+_6" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_8" outlet="out"/>
+               <dest obj="+_8" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="+_8" outlet="out"/>
+               <dest obj="+_9" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_9" outlet="out"/>
+               <dest obj="+_8" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="+_7" outlet="out"/>
+               <dest obj="sine_7" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="+_9" outlet="out"/>
+               <dest obj="sine_8" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="-_1" outlet="out"/>
+               <dest obj="sine_2" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="*c_10" outlet="out"/>
+               <dest obj="-_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="-_2" outlet="out"/>
+               <dest obj="sine_3" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="*c_11" outlet="out"/>
+               <dest obj="+_10" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="+_10" outlet="out"/>
+               <dest obj="-_3" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="*c_12" outlet="out"/>
+               <dest obj="+_10" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="-_3" outlet="out"/>
+               <dest obj="sine_1" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="mix_2" outlet="out"/>
+               <dest obj="outlet_1" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="sine_8" outlet="wave"/>
+               <dest obj="OSC_8" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sine_7" outlet="wave"/>
+               <dest obj="OSC_7" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sine_6" outlet="wave"/>
+               <dest obj="OSC_6" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sine_4" outlet="wave"/>
+               <dest obj="OSC_4" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sine_2" outlet="wave"/>
+               <dest obj="OSC_2" inlet="in"/>
+            </net>
+            <net>
+               <source obj="sine_1" outlet="wave"/>
+               <dest obj="OSC_1" inlet="in"/>
+            </net>
+            <net>
+               <source obj="OSC_1" outlet="out"/>
+               <dest obj="mix_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="OSC_2" outlet="out"/>
+               <dest obj="mix_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="sine_3" outlet="wave"/>
+               <dest obj="OSC_3" inlet="in"/>
+            </net>
+            <net>
+               <source obj="OSC_3" outlet="out"/>
+               <dest obj="mix_2" inlet="in3"/>
+            </net>
+            <net>
+               <source obj="OSC_4" outlet="out"/>
+               <dest obj="mix_2" inlet="in4"/>
+            </net>
+            <net>
+               <source obj="sine_5" outlet="wave"/>
+               <dest obj="OSC_5" inlet="in"/>
+            </net>
+            <net>
+               <source obj="OSC_5" outlet="out"/>
+               <dest obj="mix_2" inlet="in5"/>
+            </net>
+            <net>
+               <source obj="OSC_6" outlet="out"/>
+               <dest obj="mix_2" inlet="in6"/>
+            </net>
+            <net>
+               <source obj="OSC_7" outlet="out"/>
+               <dest obj="mix_2" inlet="in7"/>
+            </net>
+            <net>
+               <source obj="OSC_8" outlet="out"/>
+               <dest obj="mix_2" inlet="in8"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="math/abs" sha="1223183c9ab3f24c07bc9d9ded8e512632830a96" uuid="f4078fd9b2dff40d4f1551b79900c9ab360c99" name="abs_1" x="406" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/-c" sha="fa9d21bbc7519b8fc3efe863ba9b47c0590c5470" uuid="aafdb4cc793fc2dd9b2310a9833c7099a771cd33" name="-c_1" x="462" y="224">
+      <params>
+         <frac32.u.map name="c" value="16.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/double" sha="5be1b19a72bc5f18f910f2b076d6519c5da7322f" uuid="3b7c0f3e2d95da4ec849103bfaba6c1cee7b8661" name="double_1" x="518" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/sat" sha="99abbf9e35b69a79895360a5b6bc8dd1033933fb" uuid="a64166c1389cd0d5c62a8d3cd5963613be84e9e8" name="sat_1" x="602" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_8" x="658" y="224">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="env/ahd" sha="c4000e3e6417d9d57283d66476b83f22f975ff09" uuid="2139369d6de2ba5ddf76e602d1d25df653ca9eed" name="ahd_1" x="644" y="336">
+      <params>
+         <frac32.s.map name="a" value="-22.0"/>
+         <frac32.s.map name="d" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/lp m" sha="c2224dc682842eae1af4496f3f94a6afc1525ee4" uuid="1aa1bc51da479ed92429af700591f9d7b9f45f22" name="lp_2" x="756" y="336">
+      <params>
+         <frac32.s.map name="pitch" value="63.0"/>
+         <frac32.u.map name="reso" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="868" y="336">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_1" x="938" y="490">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="keyb1" outlet="note"/>
+         <dest obj="patcher_1" inlet="note_in"/>
+      </net>
+      <net>
+         <source obj="keyb1" outlet="gate"/>
+         <dest obj="ahd_8" inlet="gate"/>
+         <dest obj="ahd_9" inlet="gate"/>
+         <dest obj="ahd_1" inlet="gate"/>
+      </net>
+      <net>
+         <source obj="ahd_8" outlet="env"/>
+         <dest obj="vca_8" inlet="v"/>
+      </net>
+      <net>
+         <source obj="abs_1" outlet="out"/>
+         <dest obj="-c_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="-c_1" outlet="out"/>
+         <dest obj="double_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sat_1" outlet="out"/>
+         <dest obj="vca_8" inlet="a"/>
+      </net>
+      <net>
+         <source obj="double_1" outlet="out"/>
+         <dest obj="sat_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="vca_8" outlet="o"/>
+         <dest obj="lp_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="patcher_1" outlet="outlet_1"/>
+         <dest obj="abs_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="lp_2" outlet="out"/>
+         <dest obj="scope_1" inlet="in"/>
+         <dest obj="out_1" inlet="left"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="ahd_1" outlet="env"/>
+         <dest obj="lp_2" inlet="pitch"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>-8</x>
+      <y>-8</y>
+      <width>1616</width>
+      <height>1176</height>
+   </windowPos>
+</patch-1.0>
