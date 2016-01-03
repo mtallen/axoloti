@@ -1,73 +1,407 @@
 <patch-1.0>
-   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="238" y="70">
+   <obj type="ctrl/dial b" sha="b26f881dfa1451f0269e068eb6b3d824b43b41d3" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_2" x="504" y="42">
       <params>
-         <frac32.u.map name="value" value="24.0"/>
+         <frac32.s.map name="value" value="1.0"/>
       </params>
       <attribs/>
    </obj>
-   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="630" y="98">
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="98" y="70">
       <params>
-         <frac32.u.map name="value" value="27.5"/>
+         <frac32.u.map name="value" value="19.0"/>
       </params>
       <attribs/>
    </obj>
-   <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="70" y="210">
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="210" y="70">
       <params>
-         <frac32.s.map name="pitch" value="-5.0"/>
+         <frac32.u.map name="value" value="14.0"/>
       </params>
       <attribs/>
    </obj>
-   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_10" x="182" y="210">
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_1" x="658" y="70">
       <params/>
       <attribs/>
    </obj>
-   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_1" x="252" y="210">
+   <obj type="mix/mix 2" sha="f5582f4fce1b25a668f1f5dead41cccf09e4e7be" uuid="30c04239c88e09d3fa5c333b784ecf54f1b0e268" name="mix_1" x="980" y="126">
+      <params>
+         <frac32.u.map name="gain1" value="32.0"/>
+         <frac32.u.map name="gain2" value="27.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_8" x="196" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_9" x="322" y="210">
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_10" x="294" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_2" x="392" y="210">
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_1" x="364" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_11" x="462" y="210">
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_9" x="434" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_3" x="532" y="210">
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_2" x="504" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_12" x="602" y="210">
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_11" x="574" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_4" x="672" y="210">
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_3" x="644" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_8" x="742" y="210">
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_12" x="714" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="826" y="224">
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="cos_4" x="784" y="210">
       <params/>
       <attribs/>
    </obj>
-   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_1" x="826" y="420">
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="980" y="266">
       <params/>
       <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_13" x="882" y="280">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="range" x="168" y="322">
+      <params>
+         <frac32.u.map name="value" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_3" x="252" y="336">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="28" y="364">
+      <params>
+         <frac32.s.map name="pitch" value="5.299999713897705"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_1" x="364" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/min" sha="ec2572fd7d552e7a6946d7a9d4c50dab4062bc95" uuid="75ccba69da05026c510d05198149fbde58ebbdcd" name="min_1" x="420" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/max" sha="f32a9c1f0160c7b96cc4e75bed16e62a3ef12340" uuid="1d512af879107527df7313f1749d700fa05b5376" name="max_1" x="490" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_1" x="560" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_2" x="630" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_2" x="686" y="364">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_1" x="882" y="392">
+      <params/>
+      <attribs/>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="patcher_1" x="336" y="462">
+      <params/>
+      <attribs/>
+      <subpatch>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Audio_in" x="56" y="182">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_1" x="154" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/min" sha="ec2572fd7d552e7a6946d7a9d4c50dab4062bc95" uuid="75ccba69da05026c510d05198149fbde58ebbdcd" name="min_1" x="210" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/max" sha="f32a9c1f0160c7b96cc4e75bed16e62a3ef12340" uuid="1d512af879107527df7313f1749d700fa05b5376" name="max_1" x="280" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_1" x="350" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_2" x="420" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_2" x="476" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="Audio_out" x="574" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Range_in" x="56" y="252">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="Audio_in" outlet="inlet"/>
+               <dest obj="min_1" inlet="in2"/>
+               <dest obj="-_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="Range_in" outlet="inlet"/>
+               <dest obj="inv_1" inlet="in"/>
+               <dest obj="min_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="min_1" outlet="out"/>
+               <dest obj="max_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="max_1" outlet="out"/>
+               <dest obj="-_1" inlet="in1"/>
+               <dest obj="-_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="inv_1" outlet="out"/>
+               <dest obj="max_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="-_1" outlet="out"/>
+               <dest obj="inv_2" inlet="in"/>
+            </net>
+            <net>
+               <source obj="inv_2" outlet="out"/>
+               <dest obj="-_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="-_2" outlet="out"/>
+               <dest obj="Audio_out" inlet="outlet"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="math/div 2" sha="47888501939cd962dc383d225cbb2eb25b9d6b52" uuid="ad1e413d83e5edce017e3e9a4f30d86035cf637" name="div_1" x="462" y="462">
+      <params/>
+      <attribs/>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="patcher_2" x="532" y="462">
+      <params/>
+      <attribs/>
+      <subpatch>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Audio_in" x="56" y="182">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_1" x="154" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/min" sha="ec2572fd7d552e7a6946d7a9d4c50dab4062bc95" uuid="75ccba69da05026c510d05198149fbde58ebbdcd" name="min_1" x="210" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/max" sha="f32a9c1f0160c7b96cc4e75bed16e62a3ef12340" uuid="1d512af879107527df7313f1749d700fa05b5376" name="max_1" x="280" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_1" x="350" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_2" x="420" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_2" x="476" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="Audio_out" x="574" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Range_in" x="56" y="252">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="Audio_in" outlet="inlet"/>
+               <dest obj="min_1" inlet="in2"/>
+               <dest obj="-_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="Range_in" outlet="inlet"/>
+               <dest obj="inv_1" inlet="in"/>
+               <dest obj="min_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="min_1" outlet="out"/>
+               <dest obj="max_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="max_1" outlet="out"/>
+               <dest obj="-_1" inlet="in1"/>
+               <dest obj="-_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="inv_1" outlet="out"/>
+               <dest obj="max_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="-_1" outlet="out"/>
+               <dest obj="inv_2" inlet="in"/>
+            </net>
+            <net>
+               <source obj="inv_2" outlet="out"/>
+               <dest obj="-_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="-_2" outlet="out"/>
+               <dest obj="Audio_out" inlet="outlet"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="math/div 4" sha="ee7607e79907195994452bfcfd339d9c8017ce37" uuid="e4729bdd1e800715be3fe5312bc36a037d0fb3a9" name="div_2" x="630" y="462">
+      <params/>
+      <attribs/>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="patcher_3" x="700" y="462">
+      <params/>
+      <attribs/>
+      <subpatch>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Audio_in" x="56" y="182">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_1" x="154" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/min" sha="ec2572fd7d552e7a6946d7a9d4c50dab4062bc95" uuid="75ccba69da05026c510d05198149fbde58ebbdcd" name="min_1" x="210" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/max" sha="f32a9c1f0160c7b96cc4e75bed16e62a3ef12340" uuid="1d512af879107527df7313f1749d700fa05b5376" name="max_1" x="280" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_1" x="350" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/inv" sha="3e213fdc5d4220476cf173e433160725802df77f" uuid="7f4c6cf4dcf79f9b0aa81c2eaf540405875714a3" name="inv_2" x="420" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/-" sha="73ae94f7f0eb25b11f181099c6967ebb31ee3f83" uuid="832edca3a945aa25ae1875d277bdd12d6709031a" name="-_2" x="476" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="Audio_out" x="574" y="224">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet a" sha="709c10aa648c6e5a3c00da4b5dd238899a7c109c" uuid="b577fe41e0a6bc7b5502ce33cb8a3129e2e28ee5" name="Range_in" x="56" y="252">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="Audio_in" outlet="inlet"/>
+               <dest obj="min_1" inlet="in2"/>
+               <dest obj="-_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="Range_in" outlet="inlet"/>
+               <dest obj="inv_1" inlet="in"/>
+               <dest obj="min_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="min_1" outlet="out"/>
+               <dest obj="max_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="max_1" outlet="out"/>
+               <dest obj="-_1" inlet="in1"/>
+               <dest obj="-_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="inv_1" outlet="out"/>
+               <dest obj="max_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="-_1" outlet="out"/>
+               <dest obj="inv_2" inlet="in"/>
+            </net>
+            <net>
+               <source obj="inv_2" outlet="out"/>
+               <dest obj="-_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="-_2" outlet="out"/>
+               <dest obj="Audio_out" inlet="outlet"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="math/+" sha="9f8cb68e327acfaa43539be73ff97faab497ad45" uuid="faedbea4612d9bd3644d6d3bf31946d848a70e19" name="+_1" x="196" y="560">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_2" x="882" y="588">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial b" sha="b26f881dfa1451f0269e068eb6b3d824b43b41d3" uuid="862e7d7f29093cb1ce4aed72244d118ad4d46692" name="dial_4" x="126" y="658">
+      <params>
+         <frac32.s.map name="value" value="-32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_2" x="182" y="658">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/min" sha="ec2572fd7d552e7a6946d7a9d4c50dab4062bc95" uuid="75ccba69da05026c510d05198149fbde58ebbdcd" name="min_2" x="252" y="658">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/wrap" sha="a1a66efb8d49141da262a023a93fb55971cd3307" uuid="8746cb26006c3ad0808df435ca66325fef902e14" name="wrap_1" x="322" y="658">
+      <params/>
+      <attribs>
+         <spinner attributeName="bits" value="0"/>
+      </attribs>
    </obj>
    <nets>
-      <net>
-         <source obj="vca_8" outlet="o"/>
-         <dest obj="scope_1" inlet="in"/>
-         <dest obj="out_1" inlet="left"/>
-         <dest obj="out_1" inlet="right"/>
-      </net>
       <net>
          <source obj="dial_1" outlet="out"/>
          <dest obj="vca_8" inlet="v"/>
@@ -75,6 +409,10 @@
       <net>
          <source obj="sine_1" outlet="wave"/>
          <dest obj="vca_10" inlet="a"/>
+         <dest obj="vca_8" inlet="a"/>
+         <dest obj="min_1" inlet="in2"/>
+         <dest obj="-_1" inlet="in2"/>
+         <dest obj="patcher_1" inlet="Audio_in"/>
       </net>
       <net>
          <source obj="cos_1" outlet="out"/>
@@ -83,10 +421,6 @@
       <net>
          <source obj="vca_9" outlet="o"/>
          <dest obj="cos_2" inlet="phase"/>
-      </net>
-      <net>
-         <source obj="vca_10" outlet="o"/>
-         <dest obj="cos_1" inlet="phase"/>
       </net>
       <net>
          <source obj="dial_3" outlet="out"/>
@@ -108,12 +442,78 @@
          <dest obj="cos_3" inlet="phase"/>
       </net>
       <net>
-         <source obj="cos_4" outlet="out"/>
-         <dest obj="vca_8" inlet="a"/>
-      </net>
-      <net>
          <source obj="cos_2" outlet="out"/>
          <dest obj="vca_11" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_10" outlet="o"/>
+         <dest obj="cos_1" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="dial_2" outlet="out"/>
+         <dest obj="interp_1" inlet="i"/>
+         <dest obj="vca_13" inlet="v"/>
+      </net>
+      <net>
+         <source obj="dial_4" outlet="out"/>
+         <dest obj="interp_2" inlet="i"/>
+      </net>
+      <net>
+         <source obj="range" outlet="out"/>
+         <dest obj="interp_3" inlet="i"/>
+      </net>
+      <net>
+         <source obj="interp_3" outlet="o"/>
+         <dest obj="inv_1" inlet="in"/>
+         <dest obj="min_1" inlet="in1"/>
+         <dest obj="patcher_1" inlet="Range_in"/>
+         <dest obj="div_1" inlet="in"/>
+         <dest obj="div_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="min_1" outlet="out"/>
+         <dest obj="max_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="max_1" outlet="out"/>
+         <dest obj="-_1" inlet="in1"/>
+         <dest obj="-_2" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="inv_1" outlet="out"/>
+         <dest obj="max_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="-_1" outlet="out"/>
+         <dest obj="inv_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="inv_2" outlet="out"/>
+         <dest obj="-_2" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="patcher_1" outlet="Audio_out"/>
+         <dest obj="patcher_2" inlet="Audio_in"/>
+         <dest obj="scope_1" inlet="in"/>
+         <dest obj="out_1" inlet="left"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="patcher_2" outlet="Audio_out"/>
+         <dest obj="patcher_3" inlet="Audio_in"/>
+      </net>
+      <net>
+         <source obj="div_1" outlet="out"/>
+         <dest obj="patcher_2" inlet="Range_in"/>
+      </net>
+      <net>
+         <source obj="div_2" outlet="out"/>
+         <dest obj="patcher_3" inlet="Range_in"/>
+      </net>
+      <net>
+         <source obj="patcher_3" outlet="Audio_out"/>
+         <dest obj="scope_2" inlet="in"/>
+         <dest obj="vca_13" inlet="a"/>
       </net>
    </nets>
    <settings>
@@ -121,9 +521,9 @@
    </settings>
    <notes><![CDATA[]]></notes>
    <windowPos>
-      <x>215</x>
-      <y>278</y>
-      <width>1059</width>
-      <height>763</height>
+      <x>38</x>
+      <y>0</y>
+      <width>1274</width>
+      <height>1160</height>
    </windowPos>
 </patch-1.0>
