@@ -1,0 +1,38 @@
+<objdefs>
+   <obj.normal id="fold" uuid="dfc0e2bf348b696cf099d6a3af3742792523ff60" sha="dfc0e2bf348b696cf099d6a3af3742792523fm60">
+      <upgradeSha>dfc0e2bf348b696cf099d6a3af3742792666fma0</upgradeSha>
+      <sDescription>Fold, incoming signal is reflected against the threshold amount both above and beloew zero. will move the incoming signal up or down</sDescription>
+      <author>Matthew Allen</author>
+      <license>BSD</license>
+      <helpPatch>fold.axh</helpPatch>
+      <inlets>
+         <frac32 name="t" description="+/- Threshold level for fold"/>
+		 <frac32 name="o" description="offset for incoming signal"/>
+         <frac32buffer name="in" description="audio input"/>
+      </inlets>
+      <outlets>
+         <frac32buffer name="out" description="folded output"/>
+      </outlets>
+      <displays/>
+      <params/>
+      <attribs/>
+      <code.declaration>
+	  <![CDATA[   
+			// recipricol for the threshold amount. Used to normalize output
+			int32_t thresholdRecip;
+		]]>
+	  </code.declaration>
+      <code.krate>
+	  <![CDATA[
+			float thresh = inlet_t;
+			thresholdRecip = (int)(281474976710656.f/thresh);
+		]]>
+	</code.krate>
+      <code.srate>
+	  <![CDATA[
+			// does offsetting a signal work?
+			outlet_out =  inlet_in + inlet_o;
+		]]>
+	  </code.srate>
+   </obj.normal>
+</objdefs>

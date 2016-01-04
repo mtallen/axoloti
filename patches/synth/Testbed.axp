@@ -1,0 +1,77 @@
+<patch-1.0>
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_1" x="98" y="70">
+      <params>
+         <frac32.u.map name="value" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/dial p" sha="501c30e07dedf3d701e8d0b33c3c234908c3388e" uuid="cc5d2846c3d50e425f450c4b9851371b54f4d674" name="dial_3" x="210" y="70">
+      <params>
+         <frac32.u.map name="value" value="14.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_1" x="658" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 2" sha="f5582f4fce1b25a668f1f5dead41cccf09e4e7be" uuid="30c04239c88e09d3fa5c333b784ecf54f1b0e268" name="mix_1" x="980" y="126">
+      <params>
+         <frac32.u.map name="gain1" value="32.0"/>
+         <frac32.u.map name="gain2" value="27.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_8" x="196" y="210">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_13" x="630" y="266">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="980" y="266">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="28" y="364">
+      <params>
+         <frac32.s.map name="pitch" value="-9.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_2" x="742" y="392">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/scope 128 b trig" sha="1d8e04cf76c1be799824f4065917f788e705b029" uuid="11747dcd1dc9afe4919f537c861fb18b80b4e4e" name="scope_1" x="882" y="392">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="dial_1" outlet="out"/>
+         <dest obj="vca_8" inlet="v"/>
+      </net>
+      <net>
+         <source obj="sine_1" outlet="wave"/>
+         <dest obj="vca_8" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_8" outlet="o"/>
+         <dest obj="scope_1" inlet="in"/>
+         <dest obj="out_1" inlet="left"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>38</x>
+      <y>0</y>
+      <width>1274</width>
+      <height>1160</height>
+   </windowPos>
+</patch-1.0>
